@@ -679,6 +679,7 @@ p {
      margin-left:9%;
      font-family:Arial;
      font-size:20px;
+     visibility: hidden;
  }
 
 #v1 {
