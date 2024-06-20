@@ -633,7 +633,7 @@ body::-webkit-scrollbar-thumb{
         display: flex;
         align-items: center;
         justify-content: center;
-        min-height: 50vh;
+        min-height: 30vh;
         justify-content: space-between;
     }
 
