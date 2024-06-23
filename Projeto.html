@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0"/>
+        <title>Menu.com</title>
+        <link rel="stylesheet" href="Projeto.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+    </head>
+    <body>
+
+        <!--Inicio do Cardapio-->
+        <section class="max-width bg" id="service">
+            <div class="container">
+                <div class="content">
+                    <div class="menu">
+                        <div class="desktop-menu">
+                            <ul>
+                                <li><a href="file:///C:/Users/meu%20micro/Desktop/Projeto%20int%201DS/index.html">HOME</a></li>
+                                <li><a href="file:///C:/Users/meu%20micro/Desktop/Projeto%20int%201DS/Sobre.html">SOBRE</a></li>
+                                <li><a href="file:///C:/Users/meu%20micro/Desktop/Projeto%20int%201DS/Servi%C3%A7os.html">NOSSOS SERVIÇOS</a></li>
+                                <li><a href="file:///C:/Users/meu%20micro/Desktop/Projeto%20int%201DS/Projeto.html">MENU</a></li>
+                                <li><a href="file:///C:/Users/meu%20micro/Desktop/Projeto%20int%201DS/Unidades.html">NOSSAS UNIDADES</a></li>
+                                <li><a href="file:///C:/Users/meu%20micro/Desktop/Projeto%20int%201DS/Projform.html">DELIVERY</a></li>
+                            </ul>
+                        </div>
+                        <div class="mobile-menu" onclick="myFuction()">
+                            <i class="fa-solid fa-bars color-preto"></i>
+                            <ul id="myLinks">
+                                <li><a href="file:///C:/Users/meu%20micro/Desktop/Projeto%20int%201DS/index.html">HOME</a></li>
+                                <li><a href="file:///C:/Users/meu%20micro/Desktop/Projeto%20int%201DS/Sobre.html">SOBRE</a></li>
+                                <li><a href="file:///C:/Users/meu%20micro/Desktop/Projeto%20int%201DS/Servi%C3%A7os.html">NOSSOS SERVIÇOS</a></li>
+                                <li><a href="file:///C:/Users/meu%20micro/Desktop/Projeto%20int%201DS/Projeto.html">MENU</a></li>
+                                <li><a href="file:///C:/Users/meu%20micro/Desktop/Projeto%20int%201DS/Unidades.html">NOSSAS UNIDADES</a></li>
+                                <li><a href="file:///C:/Users/meu%20micro/Desktop/Projeto%20int%201DS/Projform.html">DELIVERY</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="titulo">
+                        <span class="text-title color-laranja">MENU</span>
+                        <h2 class="text-md color-preto">Nosso cardápio</h2>
+                    </div>
+                    <div class="down">
+                        <div class="box">
+                            <img src="img/temaki.webp" onclick="alert('Ingredientes: Filé de salmão, Folhas de nori, Arroz, Água, Cebolinha, Wasaby e Cream creese.');">
+                            <h2 class="color-laranja">TEMAKI</h2>
+                            <p class="text-md">Com molho shoyu</p>
+                            <a href="file:///C:/Users/meu%20micro/Desktop/Projeto%20int%201DS/Mesa.html"><button>Reserve sua mesa</button></a>
+                            <p>R$ 17,50</p>
+                        </div>
+                        <div class="box">
+                            <img src="img/lamen-tudo-sobre-essa-maravilha-gastronomica.jpg" onclick="alert('Ingredientes: Macarrão chinês, Lombo de porco cozido fatiado, Ovos cozidos, Massa de peixe, Alga nori, Água, Caldo de creme de porco, Caldo de galinha, Gengibre ralado e Cebolinha.');">
+                            <h2 class="color-laranja">LAMEN</h2>
+                            <p class="text-md">Com molho shoyu</p>
+                            <a href="file:///C:/Users/meu%20micro/Desktop/Projeto%20int%201DS/Mesa.html"><button>Reserve sua mesa</button></a>
+                            <p>R$ 22,50</p>
+                        </div>
+                        <div class="box">
+                            <img src="img/sushi.jpg" onclick="alert('Ingredientes: Arroz japonês, Água, Vinagre japonês, Sal, Peixe bonito, Cenoura e Shoyu.');">
+                            <h2 class="color-laranja">SUSHI</h2>
+                            <p class="text-md">Com vagem</p>
+                            <a href="file:///C:/Users/meu%20micro/Desktop/Projeto%20int%201DS/Mesa.html"><button>Reserve sua mesa</button></a>
+                            <p>R$ 47,80</p>
+                        </div>
+                        <div class="box">
+                            <img src="img/hotrull.jpg" onclick="alert('Ingredientes: Farinha panko, Água gelada, Açucar, Farinha de trigo, Sal, Gohan, Alga nori, Salmão e Cream cheese.')">
+                            <h2 class="color-laranja">HOTROLL</h2>
+                            <p class="text-md">Com molho tare de shoyu</p>
+                            <a href="file:///C:/Users/meu%20micro/Desktop/Projeto%20int%201DS/Mesa.html"><button>Reserve sua mesa</button></a>
+                            <p>R$ 29,99</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+               <div class="content">
+                    <div class="down">
+                        <div class="box">
+                            <img src="img/Tempra.jpg" onclick="alert('Ingredientes: Cebola, Cebolinha, Camarão e Repolho.')">
+                            <h2 class="color-laranja">TEMPURÁ</h2>
+                            <p class="text-md">Com molho ingles e queijo</p>
+                            <a href="file:///C:/Users/meu%20micro/Desktop/Projeto%20int%201DS/Mesa.html"><button>Reserve sua mesa</button></a>
+                            <p>R$ 12,90</p>
+                        </div>
+                        <div class="box">
+                            <img src="img/guioza.webp" onclick="alert('Ingredientes: Farinha de trigo, Água, Sal, Cebolinha, Repolho, Shiitake, Lombo suíno, Óleo de gergilim, Shoyu, Sake, Pimenta do reino, Alho, Gengibre, Vinagre de arroz e Óleo vegetal.')">
+                            <h2 class="color-laranja">GUIOZA</h2>
+                            <p class="text-md">Com molho de la-yu</p>
+                            <a href="file:///C:/Users/meu%20micro/Desktop/Projeto%20int%201DS/Mesa.html"><button>Reserve sua mesa</button></a>
+                            <p>R$ 13,20</p>
+                        </div>
+                        <div class="box">
+                            <img src="img/harumaki.png" onclick="alert('Ingredientes: Sopa de molho de soja, Cebola, Repolho, Cenoura, Saquê, Amido de milho e Óleo de gergilim.');">
+                            <h2 class="color-laranja">HARUMAKI</h2>
+                            <p class="text-md">Com queijo</p>
+                            <a href="file:///C:/Users/meu%20micro/Desktop/Projeto%20int%201DS/Mesa.html"><button>Reserve sua mesa</button></a>
+                            <p>R$ 25,00</p>
+                        </div>
+                        <div class="box">
+                            <img src="img/slada massuo.jpg" onclick="alert('Ingredientes: Repolho, Cenoura e Cheiro verde.')">
+                            <h2 class="color-laranja">SALADA MASSUO</h2>
+                            <p class="text-md">Com batata palha</p>
+                            <a href="file:///C:/Users/meu%20micro/Desktop/Projeto%20int%201DS/Mesa.html"><button>Reserve sua mesa</button></a>
+                            <p>R$ 17,40</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container" id="container">
+                <div class="content">
+                    <div class="down">
+                        <div class="box">
+                            <img src="img/yakisopa.jpg" onclick="alert('Ingredientes: Macarrão, Peito de frango, Óleo de gergilim, Brócolis, Cenoura, Couve-flor, Pimentão, Alho, Shoyu e Amido de milho.')">
+                            <h2 class="color-laranja">YAKISOBA</h2>
+                            <p class="text-md">Com molho de vinho</p>
+                            <a href="file:///C:/Users/meu%20micro/Desktop/Projeto%20int%201DS/Mesa.html"><button>Reserve sua mesa</button></a>
+                            <p>R$ 12,90</p>
+                        </div>
+                        <div class="box">
+                            <img src="img/niguiri.webp" onclick="alert('Ingredientes: Salmão, Arroz japonês, Atum, Abadejo, Wasabi e Conserva de gengibre.')">
+                            <h2 class="color-laranja">NIGUIRI</h2>
+                            <p class="text-md">Com molho de pimenta</p>
+                            <a href="file:///C:/Users/meu%20micro/Desktop/Projeto%20int%201DS/Mesa.html"><button>Reserve sua mesa</button></a>
+                            <p>R$ 39,80</p>
+                        </div>
+                        <div class="box">
+                            <img src="img/banana.jpg" onclick="alert('Ingredientes: Banana prata, Manteiga, Açucar, Caldo de laranja e Rum.')">
+                            <h2 class="color-laranja">BANANA FLAMBADA</h2>
+                            <p class="text-md">Com mel e canela</p>
+                            <a href="file:///C:/Users/meu%20micro/Desktop/Projeto%20int%201DS/Mesa.html"><button>Reserve sua mesa</button></a>
+                            <p>R$ 40,00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="content">
+                        <div class="titulo">
+                            <span class="text-title color-vermelho">BEBIDAS</span>
+                            <h2 class="text-md color-preto">Celebre a vida com uma bebida geladinha!</h2>
+                        </div>
+                            <div class="down2" id="beb">
+                            <img src="img/suco de laranja.webp" width="280" height="160">
+                            <h2 class="color-laranja">SUCO DE LARANJA</h2>
+                            <a href="file:///C:/Users/meu%20micro/Desktop/Projeto%20int%201DS/Mesa.html"><button>Reserve sua mesa</button></a>
+                            <p id="luiz">R$ 4,50</p>
+                        </div>
+                        <div class="down2" id="beb">
+                            <img src="img/suco de uva.webp" width="280" height="160">
+                            <h2 class="color-laranja">SUCO DE UVA</h2>
+                            <a href="file:///C:/Users/meu%20micro/Desktop/Projeto%20int%201DS/Mesa.html"><button>Reserve sua mesa</button></a>
+                            <p id="luiz">R$ 3,50</p>
+                        </div>
+                        <div class="down2" id="beb">
+                            <img src="img/cafe.webp" width="280" height="160">
+                            <h2 class="color-laranja">CAFÉ EXPRESSO</h2>
+                            <a href="file:///C:/Users/meu%20micro/Desktop/Projeto%20int%201DS/Mesa.html"><button>Reserve sua mesa</button></a>
+                            <p id="luiz">R$ 4,20</p>
+                        </div>
+                        <div class="down2" id="beb">
+                            <img src="img/cappuccino.webp" width="280" height="160">
+                            <h2 class="color-laranja">CAPPUCCINO</h2>
+                            <p class="text-md"></p>
+                            <a href="file:///C:/Users/meu%20micro/Desktop/Projeto%20int%201DS/Mesa.html"><button>Reserve sua mesa</button></a>
+                            <p id="luiz">19,50</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="content">
+                        <div class="titulo">
+                            <span class="text-title color-vermelho">DRINKS</span>
+                            <h2 class="text-md color-preto">Todos os caminhos te levam a um drink geladinho!</h2>
+                        </div>
+                        <div class="down">
+                        <div class="box">
+                            <img src="img/caipirinha.webp" onclick="alert('Ingredientes: Cachaça, Limão e Açucar.')">
+                            <h2 class="color-laranja">CAIPIRINHA</h2>
+                            <p class="text-md">Com cubos de gelo</p>
+                            <a href="file:///C:/Users/meu%20micro/Desktop/Projeto%20int%201DS/Mesa.html"><button>Reserve sua mesa</button></a>
+                            <p>R$ 15,99</p>
+                        </div>
+                        <div class="box">
+                           <img src="img/bloody-mary.jpg" onclick="alert('Ingredientes: Vodca, Salsão, Limão, Molho inglês, Coentro e Sal.')">
+                           <h2 class="color-laranja">BLOODY MARY</h2>
+                           <p class="text-md">Com suco de tomate</p>
+                           <a href="file:///C:/Users/meu%20micro/Desktop/Projeto%20int%201DS/Mesa.html"><button>Reserve sua mesa</button></a>
+                           <p>R$ 74,65</p>
+                        </div>
+                        <div class="box">
+                            <img src="img/negroni.jpg" onclick="alert('Ingredientes: Gim, Campari e Vermeute tinto.')">
+                            <h2 class="color-laranja">NEGRONI</h2>
+                            <p class="text-md">Com rodelas de laranja</p>
+                            <a href="file:///C:/Users/meu%20micro/Desktop/Projeto%20int%201DS/Mesa.html"><button>Reserve sua mesa</button></a>
+                            <p>R$ 49,99</p>
+                         </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="content">
+                    <div class="titulo">
+                        <span class="text-title color-vermelho">SOBREMESAS</span>
+                        <h2 class="text-md color-preto">Saboreie um doce depois do almoço</h2> 
+                    </div>
+                    <div class="down">
+                    <div class="box">
+                        <img src="img/pudim.webp" onclick="alert('Ingredientes: Açucar, Leite condensado, Leite e Ovos.')">
+                        <h2 class="color-laranja">PUDIM TRADICIONAL</h2>
+                        <p class="text-md">Com leite condensado e gotas</p>
+                        <p class="text-md">175g</p>
+                        <a href="file:///C:/Users/meu%20micro/Desktop/Projeto%20int%201DS/Mesa.html"><button>Reserve sua mesa</button></a>
+                        <p>R$ 24,80</p>
+                    </div>
+                    <div class="box">
+                        <img src="img/brigadeiro.webp" onclick="alert('Ingredientes: Manteiga, Leite condensado, Chocolate em pó e Granulado de chocolate.')">
+                        <h2 class="color-laranja">BRIGADEIRO TRADICIONAL</h2>
+                        <p class="text-md">Com flocos de chocalate e mesclado</p>
+                        <p class="text-md">100g</p>
+                        <a href="file:///C:/Users/meu%20micro/Desktop/Projeto%20int%201DS/Mesa.html"><button>Reserve sua mesa</button></a>
+                        <p>R$ 1,50</p>
+                    </div>
+                    <div class="box">
+                        <img src="img/bolo de morango.jfif" onclick="alert('Ingredientes: Água, Nesquick, Manteiga, Açucar, Farinha de trigo, Fermento e Morango.')">
+                        <h2 class="color-laranja">BOLO DE POTE DE MORANGO</h2>
+                        <p class="text-md">Com cobertura de chocalate</p>
+                        <p class="text-md">250g</p>
+                        <a href="file:///C:/Users/meu%20micro/Desktop/Projeto%20int%201DS/Mesa.html"><button>Reserve sua mesa</button></a>
+                        <p>R$ 13,00</p>
+                    </div>
+                    <div class="box">
+                        <img src="img/bolo de chocolate.jpg" onclick="alert('Ingredientes: Ovos, Açucar, Óleo, Chocolate em pó, Farinha de trigo, Água quente e Fermento.')">
+                        <h2 class="color-laranja">BOLO DE POTE DE CHOCOLATE</h2>
+                        <p class="text-md">Com cobertura de brigadeiro</p>
+                        <p class="text-md">250g</p>
+                        <a href="file:///C:/Users/meu%20micro/Desktop/Projeto%20int%201DS/Mesa.html"><button>Reserve sua mesa</button></a>
+                        <p>R$ 14,00</p>
+                    </div>
+                </div>
+            </div>
+            <button id="back-to-top">^</button></a>
+        <script>
+
+            var btn = document.querySelector("#back-to-top");
+
+            btn.addEventListener("click", function() {
+                window.scrollTo(0,0);
+            })
+
+            function myFuction(){
+                var x = document.getElementById("myLinks")
+                if (x.style.display === "block"){
+                    x.style.display = "none";
+                }else{
+                    x.style.display = "block"
+                }
+               }
+        </script>
+    </body>
+</html>
