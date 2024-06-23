@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Delivery.com</title>
+        <link rel="stylesheet" href="Proj.styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+    </head>
+    <body id="maine-lz">
+  <div class="menu">
+      <div class="desktop-menu">
+        <ul>
+            <li><a href="file:///C:/Users/meu%20micro/Desktop/Projeto%20int%201DS/index.html">HOME</a></li>
+            <li><a href="file:///C:/Users/meu%20micro/Desktop/Projeto%20int%201DS/Sobre.html">SOBRE</a></li>
+            <li><a href="file:///C:/Users/meu%20micro/Desktop/Projeto%20int%201DS/Servi%C3%A7os.html">NOSSOS SERVIÇOS</a></li>
+            <li><a href="file:///C:/Users/meu%20micro/Desktop/Projeto%20int%201DS/Projeto.html">MENU</a></li>
+            <li><a href="file:///C:/Users/meu%20micro/Desktop/Projeto%20int%201DS/Unidades.html">NOSSAS UNIDADES</a></li>
+            <li><a href="file:///C:/Users/meu%20micro/Desktop/Projeto%20int%201DS/Projform.html">DELIVERY</a></li>
+        </ul>
+    </div>
+    <div class="mobile-menu" onclick="myFuction()">
+        <i class="fa-solid fa-bars color-preto"></i>
+        <ul id="myLinks">
+            <li><a href="file:///C:/Users/meu%20micro/Desktop/Projeto%20int%201DS/index.html">HOME</a></li>
+            <li><a href="file:///C:/Users/meu%20micro/Desktop/Projeto%20int%201DS/Sobre.html">SOBRE</a></li>
+            <li><a href="file:///C:/Users/meu%20micro/Desktop/Projeto%20int%201DS/Servi%C3%A7os.html">NOSSOS SERVIÇOS</a></li>
+            <li><a href="file:///C:/Users/meu%20micro/Desktop/Projeto%20int%201DS/Projeto.html">MENU</a></li>
+            <li><a href="file:///C:/Users/meu%20micro/Desktop/Projeto%20int%201DS/Unidades.html">NOSSAS UNIDADES</a></li>
+            <li><a href="file:///C:/Users/meu%20micro/Desktop/Projeto%20int%201DS/Projform.html">DELIVERY</a></li>
+        </ul>
+    </div>
+  </div>
+        <span class="text-title">DELIVERY</span>
+        <h2 class="text-md" id="letra">Entregue com paixão!</h2>
+        <form id="maine-ft">
+            </fieldset>
+            <div class="campo">
+                <label for="nome"><strong>Nome:</strong></label>
+                <input type="text" name="nome" id="nome" required="" maxlength="30" placeholder="Digite seu nome"></input>
+                </div>
+                <div class="campo">
+                   <label for="sobrenome"><strong>Sobrenome:</strong></label>
+                <input type="text" name="sobrenome" id="sobrenome" required="" maxlength="30" placeholder="Digite seu sobrenome">
+                  </div>
+            </fieldset>
+            <br>
+            <div class="campo">
+                  <label for="email"><strong>Email:</strong></label>
+                <input type="email" name="email" id="email" required="" maxlength="30" placeholder="Digite seu email">
+            </div>
+            <br>
+            <div class="campo">
+                <label for="telefone"><strong>Telefone para contato:</strong></label>
+                <input type="telefone" name="telefone" id="telefone" required="" maxlength="15" placeholder="Digite seu telefone">
+                <script>
+                  /* Máscaras ER */
+                function mascara(o,f){
+                  v_obj=o
+                  v_fun=f
+                  setTimeout("execmascara()",1)
+                }
+
+                function execmascara(){
+                  v_obj.value=v_fun(v_obj.value)
+                }
+
+                function mtel(v){
+                 v=v.replace(/\D/g,""); //Remove tudo o que não é dígito
+                 v=v.replace(/^(\d{2})(\d)/g,"($1) $2"); //Coloca parênteses em volta dos dois primeiros dígitos
+                 v=v.replace(/(\d)(\d{4})$/,"$1-$2"); //Coloca hífen entre o quarto e o quinto dígitos
+                return v;
+                }
+
+                function id( el ){
+	                return document.getElementById( el );
+                }
+
+                window.onload = function(){
+	                id('telefone').onkeyup = function(){
+		              mascara( this, mtel );
+	              }
+              }
+                </script>
+            </div>
+            <br>
+            <fieldset class="grupo">
+            <div class="campo">
+                <label><strong>Escolha o que você deseja pedir</strong></label><br><br>
+              
+              <label type="tecnologia1">Refeição:</label>
+              <select>
+                <option 1>Temaki</option>
+                <option 2>Lamen</option>
+                <option 3>Sushi</option>
+                <option 4>Hotrull</option>
+                <option 5>Tempurá</option>
+                <option 6>Guioza</option>
+                <option 7>Harumaki</option>
+                <option 8>Salada Massuo</option>
+                <option 9>Yakisoba</option>
+                <option 10>Niguiri</option>
+                <option 11>Banana Flambada</option>
+                <option 12>Não desejo refeição</option>
+              </select>
+              <label type="tecnologia2">Bebida:</label>
+              <select>
+                <option 1>Suco de laranja</option>
+                <option 2>Suco de uva</option>
+                <option 3>Café expresso</option>
+                <option 4>Cappuccino</option>
+                <option 5>Não desejo bebida</option>
+              </select>
+              <label type="tecnologia3">Drink:</label>
+              <select>
+                <option 1>Caipirinha</option>
+                <option 2>Bloody Mary</option>
+                <option 4>Negroni</option>
+                <option 5>Não desejo drink</option>
+              </select>
+              <label type="tecnologia4">Sobremesa:</label>
+              <select>
+                <option 1>Pudim</option>
+                <option 2>Brigadeiro</option>
+                <option 3>Bolo de pote de morango</option>
+                <option 4>Bolo de pote de chocolate</option>
+                <option 5>Não desejo sobremesa</option>
+              </select>
+              </div>
+            </fieldset>
+              <label><strong>Formas de pagamento:</strong></label>
+              <label>
+              <input type="radio" name="txtwebmaseter" value="Feminino"/>Pix<br/>
+              <input type="radio" name="txtwebmaseter" value="Masculino"/>Vale-refeição<br/>
+              <input type="radio" name="txtwebmaseter" value="Transexual"/>Cartão de crédito ou débito<br/>
+              <input type="radio" name="txtwebmaseter" value="Dinheiro"/>Dinheiro<br/>
+              </label>
+              </div>
+              <br>
+              <div class="campo">
+              <label for="senioridade"><strong>Para qual dia você gostaria de receber/retirar seu pedido?</strong></label>
+              <input type="date"/>
+              </div>
+              <div class="campo">
+              <label for="senioridade"><strong>Para qual horário você gostaria de receber/retirar seu pedido?</strong></label>
+              <input type="time"/>
+              </div>
+              <div class="campo">
+                <label for="senioridade"><strong>Digite seu endereço(exclua esta opção caso retire no restaurante)</strong></label>
+                <input type="text" placeholder="Digite seu endereço" maxlength="50"/>
+              </div>
+              <div class="campo">
+              <br>
+              <fieldset class="grupo">
+                <div class="campo">
+                    <label><strong>Retiro no restaurante ou entrega?</strong></label><br><br>
+                    <label>
+                    <input type="radio" name="txtwebmaseter" value="Retiro no restaurante"/>Retiro no restaurante<br/>
+                    <input type="radio" name="txtwebmaseter" value="Entrega"/>Entrega<br/>
+                    </label>
+                  </div>
+                </fieldset>
+                <div class="campo">
+                <label for="senioridade"><strong>Se você assinalou a opção "Retiro no restaurante", escolha a unidade</strong></label>
+                <select>
+                  <option 1>Consolação</option>
+                  <option 2>Santo Amaro</option>
+                  <option 3>Vila Prudente</option>
+                  <option 4>Lapa</option>
+                  <option 5>Itaquera</option>
+                </select>
+              </div>
+              </div>
+              
+          <input type="reset"/>
+          <input type="submit" id="a1" onclick="alert('Parabéns!, sua reserva foi confirmada com sucesso!');document.getElementById('a1')"></li>
+        </form>
+        <script>
+
+          var btn = document.querySelector("#back-to-top");
+
+          btn.addEventListener("click", function() {
+              window.scrollTo(0,0);
+          })
+
+          function myFuction(){
+              var x = document.getElementById("myLinks")
+              if (x.style.display === "block"){
+                  x.style.display = "none";
+              }else{
+                  x.style.display = "block"
+              }
+             }
+      </script>
+    </body>
+</html>

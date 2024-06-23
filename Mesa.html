@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Form.com</title>
+        <link rel="stylesheet" href="Mesa.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body id="maine-lz">
+        <span class="text-title">PREENCHA O FORMULÁRIO</span>
+        <h2 class="text-md" id="letra">Para confirmar a reserva da mesa</h2>
+        <form id="maine-ft">
+          <div class="campo">
+            <label for="nome"><strong>Nome:</strong></label>
+            <input type="text" name="nome" id="nome" maxlength="30" placeholder="Digite seu nome" required=""></input>
+            </div>
+            <div class="campo">
+               <label for="sobrenome"><strong>Sobrenome:</strong></label>
+            <input type="text" name="sobrenome" id="sobrenome" maxlength="30" placeholder="Digite seu sobrenome" required="">
+              </div>
+        </fieldset>
+        <br>
+        <div class="campo">
+              <label for="email"><strong>Email:</strong></label>
+            <input type="email" name="email" id="email" maxlength="30" placeholder="Digite seu email">
+        </div>
+        <br>
+        <div class="campo">
+            <label for="telefone"><strong>Telefone para contato:</strong></label>
+            <input type="telefone" name="telefone" id="telefone" maxlength="15" placeholder="Digite seu telefone" required="">
+            <script>
+              /* Máscaras ER */
+            function mascara(o,f){
+              v_obj=o
+              v_fun=f
+              setTimeout("execmascara()",1)
+            }
+
+            function execmascara(){
+              v_obj.value=v_fun(v_obj.value)
+            }
+
+            function mtel(v){
+             v=v.replace(/\D/g,""); //Remove tudo o que não é dígito
+             v=v.replace(/^(\d{2})(\d)/g,"($1) $2"); //Coloca parênteses em volta dos dois primeiros dígitos
+             v=v.replace(/(\d)(\d{4})$/,"$1-$2"); //Coloca hífen entre o quarto e o quinto dígitos
+            return v;
+            }
+
+            function id( el ){
+              return document.getElementById( el );
+            }
+
+            window.onload = function(){
+              id('telefone').onkeyup = function(){
+              mascara( this, mtel );
+            }
+          }
+            </script>
+        </div>
+        <br>
+          <div class="campo">
+            <label for="senioridade"><strong>Dia da reserva:</strong></label>
+            <input type="date"/>
+          </div>
+            <div class="campo">
+              <label for="senioridade"><strong>Horario da reserva:</strong></label>
+              <input type="time"/>
+              </div>
+            </div>
+              
+              
+            </fieldset>
+                
+                <fieldset class="grupo">
+                  <div class="campo">
+                      <label><strong>Precisa de algo especial?(Opcional)</strong></label><br><br>
+                      <label>
+                      <input type="text" name="txtwebmaseter" placeholder="Ex: Aniversário, etc..." maxlength="30"/><br/>
+                      </label>
+                    </div>
+                  </fieldset>
+                  <div class="campo">
+                    <label type="tecnologia1">Salão, ambiente ou atividade:</label>
+                    <select>
+                      <option 1>Salão principal</option>
+                      <option 2>Lounge</option>
+                    </select>
+                  </div>
+                  
+              </div>
+              
+          <input type="reset"/>
+          <input type="submit" id="a1" onclick="alert('Parabéns!, sua mesa foi reservada com sucesso!');document.getElementById('a1')"></li>
+        </form>
+        <a href="file:///C:/Users/meu%20micro/Desktop/Projeto%20int%201DS/Projeto.html"><button id="back-to-top">Voltar</button></a>
+    </body>
+</html>
